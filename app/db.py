@@ -1,4 +1,4 @@
-DB_PATH = ROOT / "data" / "neuroconnect360.db"
+DB_PATH = Path("/tmp/neuroconnect360.db") if os.getenv("VERCEL") else ROOT / "data" / "neuroconnect360.db"
 from __future__ import annotations
 import os
 import sqlite3
