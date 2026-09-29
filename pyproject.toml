@@ -1,0 +1,16 @@
+[project]
+name = "neuroconnect360"
+version = "1.0.0"
+requires-python = ">=3.12"
+dependencies = [
+    "fastapi",
+    "uvicorn",
+    "sqlalchemy",
+    "pydantic",
+    "python-multipart",
+    "passlib[bcrypt]",
+    "bcrypt",
+]
+
+[tool.vercel]
+entrypoint = "app.main:app"
