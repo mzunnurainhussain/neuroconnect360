@@ -1,4 +1,4 @@
-import os
+DB_PATH = ROOT / "data" / "neuroconnect360.db"
 from __future__ import annotations
 import os
 import sqlite3
